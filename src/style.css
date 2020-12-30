@@ -3,7 +3,7 @@ html {
   padding: 0;
 }
 body {
-  font-family: 'Handlee', cursive;
+  font-family: "Handlee", cursive;
   font-size: 12pt;
   background-color: #3399ff;
   padding: 10px;
@@ -38,7 +38,7 @@ p {
   border-radius: 10px;
 }
 #home {
-  background-image: url("img/zen.jpg");
+  background-image: url("../img/zen.jpg");
   background-size: cover;
 }
 #home img {
@@ -59,7 +59,7 @@ p {
   border: 5px groove #80bfff;
   color: #0073e6;
   background-color: #1a8cff;
-  padding: 5px
+  padding: 5px;
 }
 .nav-bar a {
   text-decoration: underline;
@@ -98,7 +98,9 @@ p {
 table {
   width: 100%;
 }
-table, th, td {
+table,
+th,
+td {
   border: 2px solid #cecece;
   border-collapse: collapse;
   text-align: center;
@@ -153,7 +155,8 @@ form {
 textarea {
   height: 100px;
 }
-input, textarea {
+input,
+textarea {
   margin-bottom: 10px;
   font-size: 11pt;
   padding: 15px 10px 10px;
@@ -186,11 +189,11 @@ input, textarea {
   opacity: 0.7;
 }
 .fa-facebook {
-  background: #3B5998;
+  background: #3b5998;
   color: white;
 }
 .fa-twitter {
-  background: #55ACEE;
+  background: #55acee;
   color: white;
 }
 .fa-linkedin {
