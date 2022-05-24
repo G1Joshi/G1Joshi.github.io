@@ -1,0 +1,28 @@
+{
+    "name": "G1Joshi",
+    "short_name": "G1Joshi",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#2697FF",
+    "theme_color": "#2697FF",
+    "description": "Jeevan Joshi",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/favicon.ico",
+            "sizes": "48x48",
+            "type": "image/x-icon"
+        }
+    ]
+}
