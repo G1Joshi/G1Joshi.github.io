@@ -1,0 +1,53 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #212332;
+    inset: 0;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+}
+
+#loading {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#loading img {
+    animation: 1s ease-in-out 0s infinite alternate shrink;
+    opacity: .66;
+    transition: opacity .4s;
+}
+
+#loading.init img {
+    opacity: 1;
+}
+
+#loading.done img {
+    animation: .33s ease-in-out 0s 1 forwards expand;
+    opacity: .05;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(0.90)
+    }
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(10)
+    }
+}

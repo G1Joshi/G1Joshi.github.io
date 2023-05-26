@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Jeevan Joshi">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="G1Joshi">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <title>G1Joshi</title>
+  <script>
+    var serviceWorkerVersion = "1950811847";
+  </script>
+  <script src="flutter.js" defer></script>
+</head>
+
+<body>
+  <div id="loading">
+    <img src="icons/Icon-192.png" alt="Loading..." />
+  </div>
+
+  <script>
+    window.addEventListener("load", function (ev) {
+      var loading = document.querySelector("#loading");
+      _flutter.loader
+        .loadEntrypoint({
+          serviceWorker: {
+            serviceWorkerVersion: serviceWorkerVersion,
+          },
+        })
+        .then(function (engineInitializer) {
+          loading.classList.add("init");
+          return engineInitializer.initializeEngine();
+        })
+        .then(function (appRunner) {
+          loading.classList.add("done");
+          return appRunner.runApp();
+        })
+        .then(function (app) {
+          window.setTimeout(function () {
+            loading.remove();
+          }, 200);
+        });
+    });
+  </script>
+</body>
+
+</html>
